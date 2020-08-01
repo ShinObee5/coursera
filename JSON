@@ -1,0 +1,25 @@
+import urllib.request, urllib.parse, urllib.error,xml.etree.ElementTree as ET,requests
+import json
+import ssl
+
+ctx = ssl.create_default_context()
+ctx.check_hostname = False
+ctx.verify_mode = ssl.CERT_NONE
+
+url = input('Enter - ')
+print('Receiving :',url)
+
+info =urllib.request.urlopen(url).read()
+
+data=json.loads(info)
+
+print('Retrieved:',len(data["comments"]))
+sum=0
+for i in range(len(data["comments"])):
+      
+
+        y=data["comments"][i]["count"]
+        
+        sum+=y
+       
+print(sum)
