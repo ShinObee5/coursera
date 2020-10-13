@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "git-test",
   "version": "1.0.0",
   "description": "This is a test directory to learn node",
@@ -20,5 +21,20 @@
   "homepage": "https://github.com/ShinObee5/git-test#readme",
   "devDependencies": {
     "lite-server": "^2.5.4"
+=======
+  "name": "confusion",
+  "version": "1.0.0",
+  "description": "This is a website for Ristorante Con Fusion",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+>>>>>>> 40c87a423c22fe2c1d9b236ed7659ed6981f32f7
   }
 }
